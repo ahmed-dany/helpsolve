@@ -1,0 +1,79 @@
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Salesforce Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f3f2f2;
+  color: #181818;
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f2f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9c7c5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #706e6b;
+}
+
+/* Selection */
+::selection {
+  background: #e8f4fd;
+  color: #032d60;
+}
+
+/* Focus visible pour accessibilité */
+*:focus-visible {
+  outline: 2px solid #0176d3;
+  outline-offset: 2px;
+}
+
+/* Liens */
+a {
+  color: #0176d3;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: #0063ba;
+  text-decoration: underline;
+}
+
+/* Disable default button styles */
+button {
+  font-family: inherit;
+}
+
+/* Utilities */
+.text-muted {
+  color: #706e6b;
+}
+
+.text-success {
+  color: #2e844a;
+}
+
+.text-warning {
+  color: #fe9339;
+}
+
+.text-error {
+  color: #ea001e;
+}
